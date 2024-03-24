@@ -1,0 +1,41 @@
+.header {
+  color: #F9F1E9;
+  width: 100vw;
+  height: 100vh;
+  letter-spacing: 0.1em;
+
+}
+
+.grid-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+
+}
+
+.thin{
+  font-weight: 200;
+}
+
+.main-title {
+  font-family: nunito;
+  font-weight: 400;
+  font-size: 4.2em;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: nunito;
+  src: url(/fonts/Nunito-VariableFont_wght.ttf);
+}
+.hello-message{
+  font-family: nunito;
+  font-size: .75em;
+}
+.pursing-degree{
+  font-family: nunito;
+  font-size: .75em;
+}

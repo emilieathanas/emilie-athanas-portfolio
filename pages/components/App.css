@@ -1,0 +1,12 @@
+.page-wrapper {
+  @apply mx-auto;
+  @apply min-h-screen;
+}
+.background {
+  background-image: url("/images/portfolio-background.jpeg");
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

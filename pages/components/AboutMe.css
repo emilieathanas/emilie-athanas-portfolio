@@ -1,68 +1,97 @@
-.aboutme-container{
+.wrapper {
   width: 100%;
-  background-color: rgba(0,0,0,.8);
   height: 250px;
-  padding-left: 70px;
+  background-color: rgba(0,0,0,.8);
   color: #DFD4CA;
   padding-top: 70px;
+  transition: 500ms;
 
+  margin: 0 10px;
+  max-width: calc(100% - 20px);
+
+  @media (min-width: 600px) {
+    margin: 0 60px;
+    max-width: calc(100% - 120px);
+  }
 }
-.aboutme-border{
-  font-size: 5vw;;
-  font-family: nunito;
+
+.aboutme-header {
+  position: relative;
+  left: 0;
+  width: calc(100vw - 16px);
   height: 200px;
-  border-color: #1C0049;
-  border-width: 10px;
-  width: 95%;
-  padding-top: 60px;
-  letter-spacing: .09em;
-  padding-left: 20px;
+  background-color: rgba(0,0,0,0.4);
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: calc(100% - 64px);
+    height: 100%;
+    border: 5px solid rgba(28, 0, 73, 1);
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    color: white;
+    font-size: 3.25rem;
+    margin: 0;
+  }
 }
 
-
-.aboutmecontent-container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 587px;
-  width: 80%;
+.container {
   background-color: rgba(12,0,31,.72);
   position: relative;
-  top: 200%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 25px;
   border-color: #B0A8A0;
   border-width: 5px;
   padding: 60px;
   letter-spacing: .09em;
+  display: grid;
+  grid-template-columns: auto auto;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: auto;
+  }
 }
-.myheader{
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.myheade {
   font-family: nunito;
-  font-size: 2vw;
+  font-size: 16px;
   color: #DFD4CA;
 }
-.mytext{
+
+.mytext {
   font-family: nunito;
-  font-size: 1vw;
-  width: 70%;
+  font-size: 16px;
+  max-width: 70%;
   letter-spacing: 0.1em;
- 
+
+  @media(max-width: 1000px) {
+    max-width: 100%;
+  }
 }
-hr{
+
+hr {
   border-color: #B0A8A0;
   width: 70%;
 }
 
-.portrait{
+.portrait {
   border-radius: 15px;
  
   height: auto;
-  max-width: 300px;
-  max-height: 300px;
-  
- 
+  width: min(350px,100%);
 
+  
   position: relative;
   align-self: center;
   justify-content: center;

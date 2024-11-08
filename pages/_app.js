@@ -13,15 +13,11 @@ import Projects from './components/Projects';
 export default function App() {
   return (
     <>
-    <Navbar/>
-    <div class = "background">
+      <Navbar/>
+      <div class = "background"></div>
       <Header/>
       <AboutMe/>
       <Projects/>
-    
-
-    </div>
-
     </>
   );
 }

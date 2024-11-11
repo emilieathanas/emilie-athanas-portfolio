@@ -1,9 +1,9 @@
 export default function AboutMe() {
   return (<>
-      <div className = "aboutme-header">
-        <h2>About Me</h2>
-      </div>
       <div className = "wrapper">
+        <div className = "aboutme-header">
+          <h2>About Me</h2>
+        </div>
         <div className = "container">
           <div className = "grid">
           <div>

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-reset": "rm -rf node_modules && rm package-lock.json && npm i && next dev",
     "build": "next build",
     "export": "next export"
   },
